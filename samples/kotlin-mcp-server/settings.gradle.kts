@@ -4,9 +4,11 @@ plugins {
 rootProject.name = "kotlin-mcp-server"
 
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        maven(url="https://maven.aliyun.com/repository/google")
+        maven(url="https://maven.aliyun.com/repository/public")
         mavenCentral()
-        maven("https://maven.pkg.jetbrains.space/public/p/kotlin-mcp-sdk/sdk")
+//        maven("https://maven.pkg.jetbrains.space/public/p/kotlin-mcp-sdk/sdk")
     }
 }
